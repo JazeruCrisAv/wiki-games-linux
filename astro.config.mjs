@@ -8,18 +8,29 @@ export default defineConfig({
       customCss: [
         './src/styles/custom.css',
       ],
+      social: {
+        github: 'https://github.com/JazeruCrisAv/wiki-games-linux',
+        discord: 'https://discord.com',
+      },
       sidebar: [
         {
           label: 'Guías Básicas',
           items: [
-            // El link debe coincidir con la ruta de tu archivo, sin el .mdx
             { label: 'Introducción', link: '/guias/introduccion/' },
           ],
         },
+        // --- NUEVA SECCIÓN DE HERRAMIENTAS ---
+        {
+          label: 'Herramientas',
+          items: [
+            { label: 'Esenciales', link: '/herramientas/' },
+          ],
+        },
+        // -------------------------------------
         {
           label: 'Catálogo de Juegos',
           items: [
-            // Aquí agregaremos juegos individuales más adelante
+            { label: 'Counter-Strike 2', link: '/juegos/cs2/' },
           ],
         }
       ],
