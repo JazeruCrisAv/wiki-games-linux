@@ -19,6 +19,8 @@ export default defineConfig({
           label: 'Herramientas',
           items: [
             { label: 'Esenciales', link: '/herramientas/' },
+            // Agregamos la nueva guía aquí:
+            { label: 'Heroic Games Launcher', link: '/herramientas/heroic/' },
           ],
         },
         {

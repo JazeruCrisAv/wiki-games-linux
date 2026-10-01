@@ -1,0 +1,32 @@
+---
+title: Heroic Games Launcher
+description: Cómo instalar y configurar Heroic para jugar títulos de Epic Games y GOG en Linux.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+**Heroic Games Launcher** es una alternativa rápida y de código abierto al lanzador de Epic Games y GOG. Es la opción definitiva para jugar títulos de estas tiendas en Linux, ya que integra soporte nativo para Wine y Proton.
+
+## Instalación recomendada (Flatpak)
+
+La forma más universal y segura de instalar Heroic en cualquier distribución de Linux (Ubuntu, Fedora, Arch, SteamOS, etc.) es a través de **Flathub**.
+
+<Steps>
+
+1. **Abre tu tienda de software:** Abre la tienda de aplicaciones de tu sistema (Discover, Software de GNOME, etc.).
+
+2. **Busca la aplicación:** Escribe "Heroic Games Launcher" en el buscador y haz clic en *Instalar*.
+
+3. **Alternativa por terminal:** Si prefieres la consola y tienes Flatpak configurado, usa el siguiente comando: `flatpak install flathub com.heroicgameslauncher.hgl`
+
+4. **Inicia sesión:** Abre Heroic, ve a la sección "Tiendas" (Stores) en la barra lateral e inicia sesión con tu cuenta de Epic Games, GOG o Amazon Games.
+
+</Steps>
+
+## Configuración Básica de Rendimiento
+
+Para que los juegos de Windows se ejecuten correctamente a través de Heroic, debes asegurarte de usar la capa de compatibilidad adecuada.
+
+* En la barra lateral izquierda, haz clic en **Wine Manager** (Gestor de Wine).
+* Descarga la última versión disponible de **Proton - GE** (GE-Proton).
+* Ve a los ajustes globales (Settings) de Heroic y en **Wine Version**, selecciona el Proton que acabas de descargar. ¡Así todos tus juegos usarán la mejor compatibilidad por defecto!
