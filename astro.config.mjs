@@ -6,28 +6,21 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
+		title: 'Wiki Games Linux',
+		sidebar: [
 			{
-				label: 'Inicio',
-				link: '/',
-			},
-			{
-				label: 'Guías de Herramientas',
-				items: [
-				{ label: 'Lutris', link: '/guias/lutris/' },
-				{ label: 'Wine y Proton', link: '/guias/wine/' },
-				],
-			},
-			{
-				label: 'Juegos Testeados',
-				items: [
-				{ label: 'Cyberpunk 2077', link: '/juegos/cyberpunk/' },
-				{ label: 'League of Legends', link: '/juegos/lol/' },
-				],
-			},
+			label: 'Guías Básicas',
+			items: [
+				// Aquí irían tus archivos sobre conceptos básicos
 			],
+			},
+			{
+			label: 'Lista de Juegos',
+			items: [
+				{ label: 'Counter-Strike 2', link: '/juegos/csgo/' },
+			],
+			},
+		],
 		}),
 	],
 });
