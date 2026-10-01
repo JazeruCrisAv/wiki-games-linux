@@ -1,0 +1,11 @@
+/* src/styles/custom.css */
+:root {
+  /* Color principal (Verde neón gaming) */
+  --sl-color-accent-low: #002b11;
+  --sl-color-accent: #00e659;
+  --sl-color-accent-high: #b3ffe0;
+  
+  /* Color de fondo para modo oscuro (Más oscuro para resaltar el verde) */
+  --sl-color-black: #0b0f19;
+  --sl-color-bg: #0f172a;
+}

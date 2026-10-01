@@ -7,6 +7,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 		title: 'Wiki Games Linux',
+		customCss: [
+        './src/styles/custom.css',
+		],
 		sidebar: [
 			{
 			label: 'Guías Básicas',
