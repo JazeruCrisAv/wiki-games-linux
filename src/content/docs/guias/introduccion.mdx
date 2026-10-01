@@ -1,0 +1,44 @@
+---
+title: Introducción a Gaming en Linux
+description: Conceptos básicos para empezar a jugar en tu distribución.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Bienvenido a la guía definitiva. Para empezar a jugar, lo primero es asegurarnos de tener los controladores de video (drivers) actualizados.
+
+## Instalación de Steam
+
+Steam es la plataforma principal. Selecciona tu distribución para ver los comandos de instalación:
+
+<Tabs>
+  <TabItem label="Ubuntu/Debian" icon="linux">
+    ```bash
+    sudo apt update
+    sudo apt install steam
+    ```
+  </TabItem>
+  <TabItem label="Arch Linux" icon="setting">
+    ```bash
+    sudo pacman -Syu
+    sudo pacman -S steam
+    ```
+  </TabItem>
+  <TabItem label="Fedora" icon="laptop">
+    ```bash
+    sudo dnf install steam
+    ```
+  </TabItem>
+</Tabs>
+
+## Habilitar Proton
+
+Proton es la capa de compatibilidad de Valve que permite ejecutar juegos de Windows en Linux.
+
+:::tip[Consejo de Rendimiento]
+Para la mayoría de los juegos recientes, te recomendamos forzar el uso de **Proton Experimental** desde las propiedades del juego en Steam.
+:::
+
+:::caution[Advertencia]
+Los juegos con sistemas antitrampas (Anti-Cheat) muy agresivos a nivel de kernel, como Valorant, actualmente no funcionan en Linux.
+:::

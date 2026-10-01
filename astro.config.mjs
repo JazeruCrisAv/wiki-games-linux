@@ -1,29 +1,28 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-		title: 'Wiki Games Linux',
-		customCss: [
+  integrations: [
+    starlight({
+      title: 'Wiki Games Linux',
+      customCss: [
         './src/styles/custom.css',
-		],
-		sidebar: [
-			{
-			label: 'Guías Básicas',
-			items: [
-				// Aquí irían tus archivos sobre conceptos básicos
-			],
-			},
-			{
-			label: 'Lista de Juegos',
-			items: [
-				{ label: 'Counter-Strike 2', link: '/juegos/csgo/' },
-			],
-			},
-		],
-		}),
-	],
+      ],
+      sidebar: [
+        {
+          label: 'Guías Básicas',
+          items: [
+            // El link debe coincidir con la ruta de tu archivo, sin el .mdx
+            { label: 'Introducción', link: '/guias/introduccion/' },
+          ],
+        },
+        {
+          label: 'Catálogo de Juegos',
+          items: [
+            // Aquí agregaremos juegos individuales más adelante
+          ],
+        }
+      ],
+    }),
+  ],
 });
