@@ -8,10 +8,6 @@ export default defineConfig({
       customCss: [
         './src/styles/custom.css',
       ],
-      social: {
-        github: 'https://github.com/JazeruCrisAv/wiki-games-linux',
-        discord: 'https://discord.com',
-      },
       sidebar: [
         {
           label: 'Guías Básicas',
@@ -19,14 +15,12 @@ export default defineConfig({
             { label: 'Introducción', link: '/guias/introduccion/' },
           ],
         },
-        // --- NUEVA SECCIÓN DE HERRAMIENTAS ---
         {
           label: 'Herramientas',
           items: [
             { label: 'Esenciales', link: '/herramientas/' },
           ],
         },
-        // -------------------------------------
         {
           label: 'Catálogo de Juegos',
           items: [
