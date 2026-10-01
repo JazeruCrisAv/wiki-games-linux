@@ -1,0 +1,25 @@
+---
+title: Counter-Strike 2
+description: Guía de instalación y optimización de CS2 en Linux.
+---
+
+import { Steps, Badge } from '@astrojs/starlight/components';
+
+Counter-Strike 2 es uno de los juegos competitivos más jugados y, afortunadamente, cuenta con soporte para Linux. 
+
+**Estado de compatibilidad:** <Badge text="Nativo" variant="success" size="medium" />
+
+## Guía de Instalación
+
+Sigue estos pasos para instalar y configurar el juego correctamente:
+
+<Steps>
+
+1. **Abre Steam:** Inicia el cliente de Steam en tu distribución Linux.
+
+2. **Descarga el juego:** Busca "Counter-Strike 2" en tu biblioteca e instálalo normalmente. Al ser nativo, Steam no usará Proton por defecto.
+
+3. **Configura los parámetros de lanzamiento (Opcional):** 
+   Si experimentas tirones (stuttering), haz clic derecho en el juego > *Propiedades* > *General*. En "Parámetros de lanzamiento" escribe:
+   ```text
+   -vulkan
