@@ -13,13 +13,14 @@ export default defineConfig({
           label: 'Guías Básicas',
           items: [
             { label: 'Introducción', link: '/guias/introduccion/' },
+            // Agregamos el FAQ aquí:
+            { label: 'Preguntas Frecuentes', link: '/guias/faq/' },
           ],
         },
         {
           label: 'Herramientas',
           items: [
             { label: 'Esenciales', link: '/herramientas/' },
-            // Agregamos la nueva guía aquí:
             { label: 'Heroic Games Launcher', link: '/herramientas/heroic/' },
           ],
         },
